@@ -7,8 +7,6 @@ import Events from './Events';
 import { BrowserRouter as Router, Route, Link, Redirect, withRouter, Switch } from 'react-router-dom';
 import './charge.css';
 
-
-
 const styles = {
   button: {
     margin: 12,
@@ -56,3 +54,24 @@ const RaisedButtonExampleComplex = () => (
 );
 
 export default RaisedButtonExampleComplex;
+
+// import React, { Component } from 'react';
+
+// class Buttons extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <div>
+//           <button onClick=""></button>
+//           <p>Eventos</p>
+//         </div>
+//         <div>
+//           <button></button>
+//           <p>Amigos</p>
+//         </div>        
+//       </div>
+//     );
+//   }
+// }
+
+// export default Buttons;
