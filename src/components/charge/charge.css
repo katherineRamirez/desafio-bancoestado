@@ -1,0 +1,13 @@
+.containerBtn{
+  display: inline-block;
+  background-color: #eeeeee;
+  margin: 1vh;
+}
+
+.containerBtn p{
+  margin-top: -1vh;
+}
+
+.btn{
+  border-radius: 1vh;
+}
