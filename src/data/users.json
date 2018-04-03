@@ -1,0 +1,52 @@
+{
+  "response": [
+    {
+      "name": "Estefania Osses",
+      "register": "true"
+    },
+    {
+      "name": "Katherine Ramirez",
+      "register": "true"
+    },
+    {
+      "name": "Lexis Rodriguez",
+      "register": "true"
+    },
+    {
+      "name": "Valeria Navarrete",
+      "register": "true"
+    },
+    {
+      "name": "Karen Aedo",
+      "register": "true"
+    },
+    {
+      "name": "Roxana Cares",
+      "register": "true"
+    },
+    {
+      "name": "Aileen Guerra",
+      "register": "false"
+    },
+    {
+      "name": "Lía Cubillos",
+      "register": "false"
+    },
+    {
+      "name": "Valeska Perez",
+      "register": "false"
+    },
+    {
+      "name": "Ricardo Mendez",
+      "register": "false"
+    },
+    {
+      "name": "Daniel Bravo",
+      "register": "false"
+    },
+    {
+      "name": "Fernando Castro",
+      "register": "false"
+    },
+  ]
+}
