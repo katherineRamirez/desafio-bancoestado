@@ -1,6 +1,7 @@
 // Dependencias
 import React, { Component } from 'react';
 import firebase from '../../firebase.js';
+import Evento from './../evento/Evento';
 
 
 class Login extends Component {
@@ -68,6 +69,7 @@ class Login extends Component {
           </div>
           <div>
             <h1>hola </h1>
+            <Evento />
           
           </div>
          
