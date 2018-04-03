@@ -1,15 +1,19 @@
-import firebase from 'firebase';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.js';
+import './index.css';
+import * as firebase from 'firebase';
+
 
 var config = {
-    apiKey: "AIzaSyB_rTLR07bsRm7V9KI1CRcL6L6ou3A55ms",
-    authDomain: "pruebas-db9b9.firebaseapp.com",
-    databaseURL: "https://pruebas-db9b9.firebaseio.com",
-    projectId: "pruebas-db9b9",
-    storageBucket: "pruebas-db9b9.appspot.com",
-    messagingSenderId: "592217972367"
-  };
-  firebase.initializeApp(config);
+  apiKey: "AIzaSyDPQeJK6Js0dRt6zsKEAinuaJOQNIcBSf8",
+  authDomain: "bancoestado-5cb49.firebaseapp.com",
+  databaseURL: "https://bancoestado-5cb49.firebaseio.com",
+  projectId: "bancoestado-5cb49",
+  storageBucket: "",
+  messagingSenderId: "1015087644075"
+};
+firebase.initializeApp(config);
 
-export const provider = new firebase.auth.GoogleAuthProvider();
-export const auth = firebase.auth();
+
 export default firebase;
