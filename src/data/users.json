@@ -1,52 +1,89 @@
 {
-  "response": [
+  "data":
+  [
     {
       "name": "Estefania Osses",
-      "register": "true"
+      "rut": "17.293.440-4",
+      "register": "true",
+      "email":"example@example.cl"
     },
     {
       "name": "Katherine Ramirez",
-      "register": "true"
+      "rut": "17.293.440-4",
+      "register": "true",
+      "email":"example@example.cl"
+    },
+    {
+      "name": "Estefania Rojo",
+      "rut": "17.293.440-4",
+      "register": "true",
+      "email":"example@example.cl"
+    },
+    {
+      "name": "Estefania Perez",
+      "rut": "17.293.440-4",
+      "register": "true",
+      "email":"example@example.cl"
     },
     {
       "name": "Lexis Rodriguez",
-      "register": "true"
+      "rut": "17.293.440-4",
+      "register": "true",
+      "email":"example@example.cl"
     },
     {
       "name": "Valeria Navarrete",
-      "register": "true"
+      "rut": "17.293.440-4",
+      "register": "true",
+      "email":"example@example.cl"
     },
     {
       "name": "Karen Aedo",
-      "register": "true"
+      "rut": "17.293.440-4",
+      "register": "true",
+      "email":"example@example.cl"
     },
     {
       "name": "Roxana Cares",
-      "register": "true"
+      "rut": "17.293.440-4",
+      "register": "true",
+      "email":"example@example.cl"
     },
     {
       "name": "Aileen Guerra",
-      "register": "false"
+      "rut": "17.293.440-4",
+      "register": "false",
+      "email":"example@example.cl"
     },
     {
       "name": "Lía Cubillos",
-      "register": "false"
+      "rut": "17.293.440-4",
+      "register": "false",
+      "email":"example@example.cl"
     },
     {
       "name": "Valeska Perez",
-      "register": "false"
+      "rut": "17.293.440-4",
+      "register": "false",
+      "email":"example@example.cl"
     },
     {
       "name": "Ricardo Mendez",
-      "register": "false"
+      "rut": "17.293.440-4",
+      "register": "false",
+      "email":"example@example.cl"
     },
     {
       "name": "Daniel Bravo",
-      "register": "false"
+      "rut": "17.293.440-4",
+      "register": "false",
+      "email":"example@example.cl"
     },
     {
       "name": "Fernando Castro",
-      "register": "false"
+      "rut": "17.293.440-4",
+      "register": "false",
+      "email":"example@example.cl"
     },
   ]
 }
