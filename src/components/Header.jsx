@@ -7,9 +7,10 @@ import './header.css';
 
 const Header = () => (
   <AppBar
-    title={<img src={BancoEstadoLogo}/>}
-    iconElementRight={<IconButton>
+  iconElementRight={<IconButton>
     </IconButton>}
+    title={<img className="logo" src={BancoEstadoLogo}/>}
+    
   />
 );
 

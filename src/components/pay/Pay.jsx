@@ -5,6 +5,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Friends from 'material-ui/svg-icons/action/supervisor-account';
 import Commerce from 'material-ui/svg-icons/action/work';
 import FontIcon from 'material-ui/FontIcon';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 import './pay.css';
 
 
@@ -42,21 +44,25 @@ render() {
       <div className="containerStart">
         <h2 className="title">Pagar</h2>
         <div className="btns">
-        <RaisedButton
-          backgroundColor="#6320BF"
-          icon={<Friends />}
-          onClick={this.showPayFriends}
-          // style={style}
-        />    
+        <MuiThemeProvider>
+          <RaisedButton
+            backgroundColor="#6320BF"
+            icon={<Friends />}
+            onClick={this.showPayFriends}
+            // style={style}
+          />    
+        </MuiThemeProvider>
         <p>Amigos</p>
         </div>
         <div className="btns">
-        <RaisedButton 
-          backgroundColor="#FF8700"
-          icon={<Commerce />}
-          onClick={this.showPayCommerce}                          
-          // style={style}
-        />
+        <MuiThemeProvider>        
+          <RaisedButton 
+            backgroundColor="#FF8700"
+            icon={<Commerce />}
+            onClick={this.showPayCommerce}                          
+            // style={style}
+          />
+        </MuiThemeProvider>        
         <p>Comercio</p>
         </div>
       </div>

@@ -11,6 +11,7 @@ import PayIcon from 'material-ui/svg-icons/editor/monetization-on';
 import ChargeIcon from 'material-ui/svg-icons/maps/local-atm';
 import Event from 'material-ui/svg-icons/action/event';
 import FontIcon from 'material-ui/FontIcon';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './start.css';
 
 class HomePage extends Component {
@@ -60,42 +61,44 @@ render() {
       {this.state.counter === 1 ? (
       <div className="containerStart">
         <p className="title">Inicio</p>
-        <div className="btns">
-        <RaisedButton
-          backgroundColor="#6320BF"
-          icon={<Contact />}
-          onClick={this.showContacts}                                    
-          // style={style}
-        />    
-        <p>Contacto</p>
-        </div>
-        <div className="btns">
-        <RaisedButton 
-          backgroundColor="#FF8700"
-          icon={<PayIcon/>}
-          onClick={this.showCharge}                          
-          // style={style}
-        />
-        <p>Cobrar</p>
-        </div>
-        <div className="btns">
-        <RaisedButton
-          backgroundColor="#C80E1B"        
-          icon={<ChargeIcon/>}
-          onClick={this.showPay}
-          // style={style}
-        />    
-        <p>Pagar</p>
-        </div>
-        <div className="btns">
-        <RaisedButton
-          backgroundColor="#2C4BC5"
-          icon={<Event/>}
-          onClick={this.showEvent}      
-          // style={style}
-        />
-        <p>Evento</p>
-        </div>      
+        <MuiThemeProvider>
+          <div className="btns">
+            <RaisedButton
+              backgroundColor="#6320BF"
+              icon={<Contact />}
+              onClick={this.showContacts}
+                // style={style}
+              />
+              <p>Contacto</p>
+            </div>
+            <div className="btns">
+              <RaisedButton
+                backgroundColor="#FF8700"
+                icon={<PayIcon/>}
+                onClick={this.showCharge}
+                // style={style}
+              />
+              <p>Cobrar</p>
+            </div>
+            <div className="btns">
+              <RaisedButton
+                backgroundColor="#C80E1B"
+                icon={<ChargeIcon/>}
+                onClick={this.showPay}                
+                // style={style}
+              />
+              <p>Pagar</p>
+            </div>
+            <div className="btns">
+              <RaisedButton
+                backgroundColor="#2C4BC5"
+                icon={<Event/>}
+                onClick={this.showEvent}
+                // style={style}
+              />
+              <p>Evento</p>
+            </div>
+        </MuiThemeProvider>
       </div>
       ) : this.state.counter === 2 ?(<Evento/>
       ) : this.state.counter === 3 ?(<Charge/>
@@ -103,8 +106,6 @@ render() {
       ) :  (<Pay />)
 
     }
-      
     </div>
-  
   )}}
 export default HomePage;
