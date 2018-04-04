@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // Components
 import Evento from './../evento/Evento';
 import Charge from './../charge/Charge';
+import Contacts from './../Contacts';
 // Iconos y estilos
 import RaisedButton from 'material-ui/RaisedButton';
 import Contact from 'material-ui/svg-icons/action/supervisor-account';
@@ -23,6 +24,13 @@ class HomePage extends Component {
     };
     this.showEvent = this.showEvent.bind(this);
     this.showCharge = this.showCharge.bind(this);
+    this.showContacts = this.showContacts.bind(this);
+  }
+
+  showContacts(event) {
+    this.setState({
+      counter: 4,
+    })
   }
 
   showEvent(event) {
@@ -81,6 +89,7 @@ render() {
       </div>
       ) : this.state.counter === 2 ?(<Evento/>
       ) : this.state.counter === 3 ?(<Charge/>
+      ) : this.state.counter === 4 ?(<Contacts/>
       ) : (<div>asasas</div>)
     }
       

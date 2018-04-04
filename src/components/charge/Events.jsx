@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { response } from './../../data/evento.json';
+import FixAmount from './FixAmount';
 import './charge.css'
 
 class Events extends Component {
@@ -17,16 +18,19 @@ class Events extends Component {
   showEventsToCharge() {
     console.log(response);
       return response.map((eachEvent, index) => (
-        <div className = "eachEvent" key = {index} onClick={this.showDetails.bind(this)}>
+        <div className = "eachEvent" key = {index}>
           <span className="friendToPay">{eachEvent.nombre}</span>
-          <span className="goTo">>></span>
+          <span className="goTo" onClick={this.fixAmount.bind(this)}>>></span>
           <span className="total"> ${eachEvent.monto}</span>
         </div>
       ));
   };
 
-  showDetails() {
-    console.log(this.amigos)
+  fixAmount(event) {
+    console.log(event.target);
+    // return(
+      
+    // )
   }
 
   render() {
