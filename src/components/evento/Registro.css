@@ -1,4 +1,4 @@
-.btnInvitar {
+.btnModo {
   background-color: #f97c00;
   color: #fff;
   margin-top: 5%;
@@ -8,7 +8,7 @@
   width: 16.5em;
 }
 
-.titleInvitar {
+.titleModo {
   padding-top: 4em;
   margin-left: 8%;
 }
@@ -35,13 +35,13 @@
 
 .check {
   margin: 2em 9em 2em 0em;  
-
 }
 
-.box {
-  padding-left: 34px;
+.modo {
+  padding-right: 7em;
 }
 
-label {
-  margin-left: -5em;
+.drop {
+  padding-right: 5em;
 }
+

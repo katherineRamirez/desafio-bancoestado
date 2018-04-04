@@ -5,7 +5,7 @@ import ActionFavorite from 'material-ui/svg-icons/action/favorite';
 import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
 import Visibility from 'material-ui/svg-icons/action/visibility';
 import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
-import './Invitar.css';
+import './EventoFinal.css';
 
 const styles = {
   block: {
@@ -18,7 +18,7 @@ const styles = {
 
 
 
-class Invitar extends Component {
+class EventoFinal extends Component {
   constructor() {
     super();//Estamos heredando de otra clase para que llame al contro
     this.state = {
@@ -39,34 +39,31 @@ class Invitar extends Component {
     return (
       <div>
         {this.state.counter === 2 ? (
-          <Registro />
+       <div>Debe aparecer lo de la karen</div>
         ) : (
             <div>
 
-              <h2 className='titleInvitar'>Crea tu evento</h2>
+              <h2 className='titleFinal'>Crea tu evento</h2>
+              <div className='circuloGris'></div>
+              <div className='circuloGris'></div>
+              <div className='circuloGris'></div>
               <div className='circuloGris'></div>
               <div className='circulo'></div>
-              <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
-              <div className='check'>
-              <h3>Invitar amigos</h3>
+              <div className='checkFinal'>
+              <h3>Cobrar</h3>
               </div>
-              <Checkbox className='box'
-                label="Roxana Rodriguez"
+              <Checkbox className='boxFinal'
+                label="Roxana Rodriguez $10000" 
                 style={styles.checkbox}
               />
-              <Checkbox className='box'
-                label="Lexis Fernandez"
+              <Checkbox className='boxFinal'
+                label="Lexis Fernandez $10000"
                 style={styles.checkbox}
               />
-              <Checkbox className='box'
-                label="Vanessa Gutierrez"
-                style={styles.checkbox}
-              />
+ 
 
-              <button className='btnInvitar' onClick={this.onButtonClick}>
-                CONTINUAR
+              <button className='btnFinal' onClick={this.onButtonClick}>
+                GENERAR COBRO
               </button>
             </div>
           )}
@@ -78,4 +75,4 @@ class Invitar extends Component {
 
 }
 
-export default Invitar;
+export default EventoFinal;
