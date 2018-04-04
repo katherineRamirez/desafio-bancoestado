@@ -20,8 +20,8 @@ class App extends Component {
       <div className="App">
         <MuiThemeProvider muiTheme={muiTheme}>
           < Header />
-        </MuiThemeProvider>
           < Login />
+        </MuiThemeProvider>
       </div>
     );
   }
