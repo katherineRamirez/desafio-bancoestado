@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
 import Registro from './Registro.jsx';
-import Checkbox from 'material-ui/Checkbox';
-import ActionFavorite from 'material-ui/svg-icons/action/favorite';
-import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
-import Visibility from 'material-ui/svg-icons/action/visibility';
-import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
+
+
 import './EventoFinal.css';
 
-const styles = {
-  block: {
-    maxWidth: 250,
-  },
-  checkbox: {
-    marginBottom: 16,
-  },
-};
 
 
 
@@ -39,7 +28,10 @@ class EventoFinal extends Component {
     return (
       <div>
         {this.state.counter === 2 ? (
-       <div>Debe aparecer lo de la karen</div>
+          <div>
+            <div className='notificacion'>Tus amigos han sido notificados</div>
+     
+          </div>
         ) : (
             <div>
 
@@ -50,17 +42,10 @@ class EventoFinal extends Component {
               <div className='circuloGris'></div>
               <div className='circulo'></div>
               <div className='checkFinal'>
-              <h3>Cobrar</h3>
+
               </div>
-              <Checkbox className='boxFinal'
-                label="Roxana Rodriguez $10000" 
-                style={styles.checkbox}
-              />
-              <Checkbox className='boxFinal'
-                label="Lexis Fernandez $10000"
-                style={styles.checkbox}
-              />
- 
+              <h4> Roxana Rodriguez $10000</h4>
+              <h4> Susana Fernandez $10000</h4>
 
               <button className='btnFinal' onClick={this.onButtonClick}>
                 GENERAR COBRO
