@@ -50,5 +50,5 @@ class Evento extends Component {
   }
   
 
-  }
+
 export default Evento;
