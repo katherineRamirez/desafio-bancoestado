@@ -34,14 +34,20 @@ class Buttons extends Component {
   render() {
     return (
       <div>
+        {this.state.counter === 1 ? (
         <div>
-          <button className="showEventsBtn" onClick={this.showEvents}></button>
-          <p>Eventos</p>
+          <div className="containerBtn">
+            <button className="showEventsBtn btn" onClick={this.showEvents}></button>
+            <p>Eventos</p>
+          </div>
+          <div className="containerBtn">
+            <button className="showFriendsBtn btn" onClick={this.showFriends}></button>
+            <p>Amigos</p>
+          </div>
         </div>
-        <div>
-          <button className="showFriendsBtn" onClick={this.showFriends}></button>
-          <p>Amigos</p>
-        </div>        
+        ) : this.state.counter === 2 ? (<Evento/>
+        ) : this.state.counter === 3 (<div>holi</div>)
+      }      
       </div>
     );
   }

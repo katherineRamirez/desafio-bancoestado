@@ -2,12 +2,21 @@
   display: inline-block;
   background-color: #eeeeee;
   margin: 1vh;
-}
-
-.containerBtn p{
-  margin-top: -1vh;
+  width: 16vh;
+  height: 16vh;
 }
 
 .btn{
   border-radius: 1vh;
+  width: 12vh;
+  height: 12vh;
+  margin-top: 1vh;
+}
+
+.showEventsBtn{
+  background-color: blue;
+}
+
+.showFriendsBtn{
+  background-color: red;
 }
