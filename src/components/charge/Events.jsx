@@ -8,6 +8,7 @@ class Events extends Component {
     super();
     this.state = {
       myEvents : [],
+      counter: 0,
     }
   }
 
@@ -27,18 +28,22 @@ class Events extends Component {
   };
 
   fixAmount(event) {
-    console.log(event.target);
-    // return(
-      
-    // )
+    console.log(response[0].amigos)
+    this.setState({
+      counter: 1
+    })
+  }
+
+  jojo() {
+    console.log(response[0].amigos)
   }
 
   render() {
     return(
       <div>
-        <div className="ball ballOne"></div>
-        <div className="ball ballTwo"></div>
-        <div className="ball ballThree"></div>
+        <div className="ball ballOrange"></div>
+        <div className="ball"></div>
+        <div className="ball"></div>
         <div>
           {this.state.myEvents !== [] ? this.showEventsToCharge() : 'Loading...'}
         </div>
