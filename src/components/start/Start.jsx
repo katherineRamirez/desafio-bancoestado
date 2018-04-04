@@ -103,8 +103,7 @@ render() {
       ) : this.state.counter === 2 ?(<Evento/>
       ) : this.state.counter === 3 ?(<Charge/>
       ) : this.state.counter === 4 ?(<Contacts/>
-      ) :  (<Pay />)
-
+      ) : (<Pay />)
     }
     </div>
   )}}
