@@ -42,6 +42,7 @@ class Contacts extends Component {
     });
     // console.log(event.target.value)
   }
+
   handleSubmit(event) {
     event.preventDefault();
     this.setState({
@@ -49,14 +50,7 @@ class Contacts extends Component {
     });
    };
   render() {
-  return(
-    <div>
-      {this.state.counter === 1 ? (
-        <div>
-          <h2 className="title-cont">Tus contactos</h2>
-          {this.state.contact}
-        </div>
-      ) : (
+    return (
       <div>
         {this.state.counter === 1 ? (
           <div>
@@ -71,7 +65,7 @@ class Contacts extends Component {
                   <input className="searchInput"
                     type="text" value={this.state.value} onChange={this.handleChange} placeholder="Buscar..." />
                 </label>
-                <input className="searchButton" type="submit" value="clicks" />
+                <input className="searchButton" type="submit" value="Buscar" />
               </form>
               {this.state.contact}
               <Options/>

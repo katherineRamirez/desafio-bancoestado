@@ -67,3 +67,6 @@ input[type]{
 .nav-contacts {
   margin-top: 2em;
 }
+label {
+  margin-left: 1em;
+ }
