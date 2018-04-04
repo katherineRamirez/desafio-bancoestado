@@ -5,7 +5,7 @@ import Pay from 'material-ui/svg-icons/editor/monetization-on';
 import Charge from 'material-ui/svg-icons/maps/local-atm';
 import Event from 'material-ui/svg-icons/action/event';
 import FontIcon from 'material-ui/FontIcon';
-import Evento from './../evento/Evento'
+import Evento from './../evento/Evento';
 import './start.css';
 
 class HomePage extends Component {
