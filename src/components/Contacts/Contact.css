@@ -1,0 +1,35 @@
+.contactos{
+  outline: 1px solid #5f5b5c;
+  width: 60%;
+  text-align: left;
+  margin-left: 20%;
+  margin-bottom: 0.5em;
+}
+.cont-search{
+  width: 60%;
+  text-align: left;
+  margin-left: 20%;
+  margin-bottom: 0.5em;
+}
+.title-cont{
+  color: #5f5b5c;
+}
+.btn-cont{
+  background-color: #f97c00;
+  border: none;
+  color: white;
+  padding: 1em;
+  border-radius: 0.2em;
+  /* position: fixed;
+  bottom: 1em; */
+  font-size: 1em;
+  align-content: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+input[type]{
+  margin-top: 1em;
+  border-radius: 0.2em;
+  padding: 1em;
+}

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import PayDetail from './PayDetail';
 import ActionFavorite from 'material-ui/svg-icons/action/favorite';
 import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
 import Visibility from 'material-ui/svg-icons/action/visibility';
 import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
+import './pay.css'
 
 
 const styles = {
@@ -17,7 +17,7 @@ const styles = {
 
 
 
-class QrCode extends Component {
+class PayDetail extends Component {
   constructor() {
     super();//Estamos heredando de otra clase para que llame al contro
     this.state = {
@@ -38,19 +38,20 @@ class QrCode extends Component {
     return (
       <div>
         {this.state.counter === 2 ? (
-          <PayDetail />
+          <div />
         ) : (
-                <div>
+            <div>
 
-        <h2 className="title">QR</h2>
+<h2 className="title">Pago</h2>
+              <div className='circuloGris'></div>
               <div className='circuloGris'></div>
               <div className='circulo'></div>
-              <div className='circuloGris'></div>
               
-      
-      <button className='btnSelectFriend' onClick={this.onButtonClick}>
-          Leer código QR
-      </button>
+
+      <p className="textPay"><strong>¡Su pago ha sido exitoso!</strong></p>
+      <p className="textPayDetail">Telepizza</p>
+      <p className="textPay">Monto Total  $10.000</p>
+      <p className="textPayDate">Fecha 31 Mar 2018</p>
             </div>
           )}
 
@@ -61,4 +62,5 @@ class QrCode extends Component {
 
 }
 
-export default QrCode;
+
+export default PayDetail;

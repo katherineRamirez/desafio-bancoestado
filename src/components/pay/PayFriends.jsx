@@ -48,17 +48,17 @@ class PayFriends extends Component {
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
+
               
-              <Checkbox className='box'
+              <Checkbox className='boxFriends'
 				          label="Hugo Perez"
 				          style={styles.checkbox}
 				       />
-				       <Checkbox className='box'
+				       <Checkbox className='boxFriends2'
 				          label="Paco Gonzalez"
 				          style={styles.checkbox}
 				       />
-				       <Checkbox className='box'
+				       <Checkbox className='boxFriends'
 				          label="Luis Tapia"
 				          style={styles.checkbox}
 				       />

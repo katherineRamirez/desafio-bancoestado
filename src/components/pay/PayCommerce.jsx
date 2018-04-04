@@ -7,6 +7,7 @@ import Visibility from 'material-ui/svg-icons/action/visibility';
 import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
 
 
+
 const styles = {
   block: {
     maxWidth: 250,
@@ -47,20 +48,21 @@ class PayCommerce extends Component {
       <div className='circulo'></div>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
-		  <Checkbox className='box'
+             
+      <div className='boxCommerce'>
+		  <Checkbox className="boxCommerce1"
           label="Cuenta Rut"
           style={styles.checkbox}
        />
-       <Checkbox className='box'
+       <Checkbox 
           label="Cuenta Corriente"
           style={styles.checkbox}
        />
-       <Checkbox className='box'
+       <Checkbox 
           label="Cuenta de Ahorro"
           style={styles.checkbox}
        />
+       </div>
 			<button className='btnSelectFriend' onClick={this.onButtonClick}>
           Continuar
       </button>

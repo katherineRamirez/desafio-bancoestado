@@ -57,7 +57,7 @@ class Invitar extends Component {
                 style={styles.checkbox}
               />
               <Checkbox className='box'
-                label="Lexis Fernandez"
+                label="Susana Fernandez"
                 style={styles.checkbox}
               />
               <Checkbox className='box'

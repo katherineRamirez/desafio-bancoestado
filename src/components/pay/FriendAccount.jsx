@@ -48,7 +48,7 @@ class FriendAccount extends Component {
               <div className='circulo'></div>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
+           
         <div className="colorCheckbox1">
         <Checkbox className='boxAccount'
           label="Cuenta Rut"
