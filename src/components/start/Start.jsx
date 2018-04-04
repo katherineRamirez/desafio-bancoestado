@@ -74,7 +74,7 @@ render() {
             <div className="btns">
               <RaisedButton
                 backgroundColor="#FF8700"
-                icon={<Pay/>}
+                icon={<PayIcon/>}
                 onClick={this.showCharge}
                 // style={style}
               />
@@ -84,6 +84,7 @@ render() {
               <RaisedButton
                 backgroundColor="#C80E1B"
                 icon={<ChargeIcon/>}
+                onClick={this.showPay}                
                 // style={style}
               />
               <p>Pagar</p>
@@ -102,7 +103,7 @@ render() {
       ) : this.state.counter === 2 ?(<Evento/>
       ) : this.state.counter === 3 ?(<Charge/>
       ) : this.state.counter === 4 ?(<Contacts/>
-      ) :  (<Pay />)
+      ) : (<Pay />)
     }
     </div>
   )}}

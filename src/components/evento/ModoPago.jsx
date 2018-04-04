@@ -5,7 +5,7 @@ import ActionFavorite from 'material-ui/svg-icons/action/favorite';
 import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
 import Visibility from 'material-ui/svg-icons/action/visibility';
 import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
-
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './ModoPago.css';
 
 const styles = {
@@ -16,8 +16,6 @@ const styles = {
     marginBottom: 16,
   },
 };
-
-
 
 class ModoPago extends Component {
   constructor() {
@@ -54,14 +52,16 @@ class ModoPago extends Component {
               <div className='checkModo'>
                 <h3>Selecciona modo de pago</h3>
               </div>
-              <Checkbox className='boxModo'
-                label="Partes Iguales"
-                style={styles.checkbox}
-              />
-               <Checkbox className='boxModo'
-                label="Proporcional"
-                style={styles.checkbox}
-              />
+              <MuiThemeProvider>  
+                <Checkbox className='boxModo'
+                  label="Partes Iguales"
+                  style={styles.checkbox}
+                />
+                <Checkbox className='boxModo'
+                  label="Proporcional"
+                  style={styles.checkbox}
+                />
+              </MuiThemeProvider>  
               <button className='btnModo1' onClick={this.onButtonClick}>
                 CONTINUAR
               </button>
