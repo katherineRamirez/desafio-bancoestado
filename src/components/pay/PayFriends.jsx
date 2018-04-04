@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import './pay.css';
 
 
 class PayFriends extends Component {
 
- 
-  render() {
+   render() {
     return (
-      <div>
-        <h2>Friends</h2>
+      <div className="inputPay">
+		  <input className="input" type="checkbox"/>Hugo Perez
+			<input className="input" type="checkbox"/>Paco Gonzalez
+			<input className="input" type="checkbox"/>Luis Tapia
+			<input className="submit" type="submit" value="Seleccionar Amigo"/>
       </div>
     )
 
