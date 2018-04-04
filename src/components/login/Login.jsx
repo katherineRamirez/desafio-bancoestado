@@ -1,6 +1,7 @@
 // Dependencias
 import React, { Component } from 'react';
 import firebase from '../../firebase.js';
+import HomePage from '../start/Start.jsx'
 
 class Login extends Component {
 
@@ -14,7 +15,7 @@ class Login extends Component {
   }
   componentWillMount() { //Se dispara una vez se renderiza
     firebase.auth().onAuthStateChanged(user => {
-      this.setState({ user }); //podria ser user:user pero se resume 
+      this.setState({ user }); //podria ser user:user pero se resume
     }) //devuelve un objeto usuario
   }
 
@@ -22,7 +23,7 @@ class Login extends Component {
     const provider = new firebase.auth.GoogleAuthProvider();
     // proveedor de google
 
-    //aca va lo que muestra el usurio 
+    //aca va lo que muestra el usurio
     firebase.auth().signInWithPopup(provider)
       // este sgning devuelve una promesa
       .then(result => console.log(`${result.user.email} ha iniciado sesión `))
@@ -52,21 +53,20 @@ class Login extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          {this.renderLoginButton()}
-        </p>
-        {this.state.user && ( 
-          <div> 
+        {this.state.user ? (
+          <div>
           <div className="User">
+            < HomePage />
             <img width="50" src={this.state.user.photoURL} alt={this.state.displayName} className='UserImg' />
             Welcome, {this.state.user.displayName}
-          </div>         
+          </div>
+          </div>
+        ) : (
+          <div>
+            <button onClick={this.handleAuth}>Inicio sesión</button>
           </div>
         )}
+
 
       </div>
     );
