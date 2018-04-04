@@ -3,6 +3,7 @@ import Login from './components/login/Login.jsx';
 import HomePage from './components/start/Start.jsx';
 import Header from './components/Header';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Pay from './components/pay/Pay.jsx';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import './App.css';
 
@@ -20,7 +21,6 @@ class App extends Component {
       <div className="App">
         <MuiThemeProvider muiTheme={muiTheme}>
           < Header />
-          < HomePage />
         </MuiThemeProvider>
           < Login />
       </div>

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import EventoFinal from './EventoFinal.jsx';
 import Checkbox from 'material-ui/Checkbox';
+import QrCode from './QrCode';
 import ActionFavorite from 'material-ui/svg-icons/action/favorite';
 import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
 import Visibility from 'material-ui/svg-icons/action/visibility';
 import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import './ModoPago.css';
+
 
 const styles = {
   block: {
@@ -17,13 +16,14 @@ const styles = {
   },
 };
 
-class ModoPago extends Component {
+
+
+class PayCommerce extends Component {
   constructor() {
     super();//Estamos heredando de otra clase para que llame al contro
     this.state = {
       counter: 1,
-      checked: false,
-      value: 1
+      checked: false
     };
     this.onButtonClick = this.onButtonClick.bind(this);
   }
@@ -34,37 +34,36 @@ class ModoPago extends Component {
     })
 
   }
-  handleChange = (event, index, value) => this.setState({ value });
+
   render() {
     return (
       <div>
         {this.state.counter === 2 ? (
-          <EventoFinal />
+          <QrCode />
         ) : (
             <div>
 
-              <h2 className='titleModo1'>Crea tu evento</h2>
+<h2 className="title">Medio de pago</h2>
+      <div className='circulo'></div>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
-              <div className='circulo'></div>
               <div className='circuloGris'></div>
-              <div className='checkModo'>
-                <h3>Selecciona modo de pago</h3>
-              </div>
-              <MuiThemeProvider>  
-                <Checkbox className='boxModo'
-                  label="Partes Iguales"
-                  style={styles.checkbox}
-                />
-                <Checkbox className='boxModo'
-                  label="Proporcional"
-                  style={styles.checkbox}
-                />
-              </MuiThemeProvider>  
-              <button className='btnModo1' onClick={this.onButtonClick}>
-                CONTINUAR
-              </button>
+		  <Checkbox className='box'
+          label="Cuenta Rut"
+          style={styles.checkbox}
+       />
+       <Checkbox className='box'
+          label="Cuenta Corriente"
+          style={styles.checkbox}
+       />
+       <Checkbox className='box'
+          label="Cuenta de Ahorro"
+          style={styles.checkbox}
+       />
+			<button className='btnSelectFriend' onClick={this.onButtonClick}>
+          Continuar
+      </button>
             </div>
           )}
 
@@ -75,4 +74,5 @@ class ModoPago extends Component {
 
 }
 
-export default ModoPago;
+export default PayCommerce;
+
