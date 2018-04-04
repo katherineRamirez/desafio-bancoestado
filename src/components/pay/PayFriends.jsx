@@ -41,7 +41,7 @@ class PayFriends extends Component {
         {this.state.counter === 2 ? (
           <FriendAccount />
         ) : (
-            <div>
+            <div className="containerPayFriends">
 
               <h2 className='titleInvitar'>Confirma Amigo</h2>
               <div className='circulo'></div>
@@ -49,8 +49,7 @@ class PayFriends extends Component {
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
-              <div className='check'>
-              </div>
+              
               <Checkbox className='box'
 				          label="Hugo Perez"
 				          style={styles.checkbox}
