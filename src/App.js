@@ -21,7 +21,6 @@ class App extends Component {
       <div className="App">
         <MuiThemeProvider muiTheme={muiTheme}>
           < Header />
-          < HomePage />
         </MuiThemeProvider>
           < Login />
       </div>
