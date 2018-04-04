@@ -1,4 +1,7 @@
-img{
+.logo{
   width: 24vh;
   margin-top: 2vh;
+}
+.iconElementRight{
+  float: right;
 }
