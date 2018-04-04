@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // Components
 import Evento from './../evento/Evento';
 import Charge from './../charge/Charge';
-import Contacts from './../Contacts';
+import Contacts from './../Contacts/index';
 // Iconos y estilos
 import RaisedButton from 'material-ui/RaisedButton';
 import Contact from 'material-ui/svg-icons/action/supervisor-account';
@@ -56,6 +56,7 @@ render() {
         <RaisedButton
           backgroundColor="#6320BF"
           icon={<Contact />}
+          onClick={this.showContacts}                                    
           // style={style}
         />    
         <p>Contacto</p>
