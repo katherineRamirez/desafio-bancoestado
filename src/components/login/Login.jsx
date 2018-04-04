@@ -64,12 +64,7 @@ class Login extends Component {
           <div className="User">
             <img width="50" src={this.state.user.photoURL} alt={this.state.displayName} className='UserImg' />
             Welcome, {this.state.user.displayName}
-          </div>
-          <div>
-            <h1>hola </h1>
-          
-          </div>
-         
+          </div>         
           </div>
         )}
 

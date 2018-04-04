@@ -26,7 +26,7 @@ class Evento extends Component {
           <Invitar />
         ) : (
             <div>
-              <h2 class='titleEvent'>Crea Tu evento</h2>
+              <h2 className='titleEvent'>Crea Tu evento</h2>
               <input
                 ref={input => { this.textInput = input; }}
                 placeholder='Nombre del evento'
@@ -35,7 +35,7 @@ class Evento extends Component {
                 ref={input => { this.textInput = input; }}
                 placeholder='Fecha del evento'
                 type="number" />
-              <button class='btnEvent' onClick={this.onButtonClick}>
+              <button className='btnEvent' onClick={this.onButtonClick}>
                 Crear evento
               </button>
             </div>
