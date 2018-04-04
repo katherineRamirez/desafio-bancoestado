@@ -13,6 +13,10 @@
   margin-top: 1vh;
 }
 
+.btn img{
+  width: 11.5vh;
+}
+
 .showEventsBtn{
   background-color: blue;
 }
