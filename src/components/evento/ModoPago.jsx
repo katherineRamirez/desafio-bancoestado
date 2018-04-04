@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Registro from './Registro.jsx';
+import EventoFinal from './EventoFinal.jsx';
 import Checkbox from 'material-ui/Checkbox';
 import ActionFavorite from 'material-ui/svg-icons/action/favorite';
 import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
 import Visibility from 'material-ui/svg-icons/action/visibility';
 import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
-import './Invitar.css';
+
+import './ModoPago.css';
 
 const styles = {
   block: {
@@ -18,12 +19,13 @@ const styles = {
 
 
 
-class Invitar extends Component {
+class ModoPago extends Component {
   constructor() {
     super();//Estamos heredando de otra clase para que llame al contro
     this.state = {
       counter: 1,
-      checked: false
+      checked: false,
+      value: 1
     };
     this.onButtonClick = this.onButtonClick.bind(this);
   }
@@ -34,38 +36,33 @@ class Invitar extends Component {
     })
 
   }
-
+  handleChange = (event, index, value) => this.setState({ value });
   render() {
     return (
       <div>
         {this.state.counter === 2 ? (
-          <Registro />
+          <EventoFinal />
         ) : (
             <div>
 
-              <h2 className='titleInvitar'>Crea tu evento</h2>
+              <h2 className='titleModo1'>Crea tu evento</h2>
+              <div className='circuloGris'></div>
+              <div className='circuloGris'></div>
               <div className='circuloGris'></div>
               <div className='circulo'></div>
               <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
-              <div className='check'>
-              <h3>Invitar amigos</h3>
+              <div className='checkModo'>
+                <h3>Selecciona modo de pago</h3>
               </div>
-              <Checkbox className='box'
-                label="Roxana Rodriguez"
+              <Checkbox className='boxModo'
+                label="Partes Iguales"
                 style={styles.checkbox}
               />
-              <Checkbox className='box'
-                label="Lexis Fernandez"
+               <Checkbox className='boxModo'
+                label="Proporcional"
                 style={styles.checkbox}
               />
-              <Checkbox className='box'
-                label="Vanessa Gutierrez"
-                style={styles.checkbox}
-              />
-
-              <button className='btnInvitar' onClick={this.onButtonClick}>
+              <button className='btnModo1' onClick={this.onButtonClick}>
                 CONTINUAR
               </button>
             </div>
@@ -78,4 +75,4 @@ class Invitar extends Component {
 
 }
 
-export default Invitar;
+export default ModoPago;
