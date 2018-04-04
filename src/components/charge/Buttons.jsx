@@ -4,7 +4,6 @@ import EventsBtn from 'material-ui/svg-icons/action/event';
 import Account from 'material-ui/svg-icons/action/supervisor-account';
 import FontIcon from 'material-ui/FontIcon';
 import Events from './Events';
-import { BrowserRouter as Router, Route, Link, Redirect, withRouter, Switch } from 'react-router-dom';
 import './charge.css';
 
 class Buttons extends Component {
@@ -21,14 +20,12 @@ class Buttons extends Component {
     this.setState({
       counter: 2,
     })
-    console.log('Button Clicked !')
   }
 
   showFriends(event) {
     this.setState({
       counter: 3,
     })
-    console.log('Button Clicked !')
   }
 
   render() {
@@ -45,7 +42,7 @@ class Buttons extends Component {
             <p>Amigos</p>
           </div>
         </div>
-        ) : this.state.counter === 2 ? (<Evento/>
+        ) : this.state.counter === 2 ? (<Events/>
         ) : this.state.counter === 3 (<div>holi</div>)
       }      
       </div>

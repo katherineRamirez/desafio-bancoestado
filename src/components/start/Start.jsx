@@ -81,7 +81,7 @@ render() {
       </div>
       ) : this.state.counter === 2 ?(<Evento/>
       ) : this.state.counter === 3 ?(<Charge/>
-      ) : this.state.counter === 4 (<div>asasas</div>)
+      ) : (<div>asasas</div>)
     }
       
     </div>
