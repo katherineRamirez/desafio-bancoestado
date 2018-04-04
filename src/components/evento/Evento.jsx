@@ -43,12 +43,7 @@ class Evento extends Component {
 
       </div>
 
-    );
-  
-    }
-   
+    );  
   }
-  
-
-  }
+}
 export default Evento;
