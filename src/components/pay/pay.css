@@ -26,7 +26,7 @@
 .btnSelectFriend {
   background-color: #f97c00;
   color: #fff;
-  margin-top: 15%;
+  margin-top: 30%;
   margin-left: 8%;
   height: 2.5em;
   border-radius: 4px;
@@ -70,14 +70,11 @@
   left: 0.9em;
 }
 
-.boxFriends, .boxFriends2{
+.boxFriends{
   margin-top: 2em;
-  margin-left: 2em;
+  margin-left: 1em;
 }
-.boxFriends2 label{
-  position: relative;
-  left: 0.7em;
-}
+
 .containerConfirm{
   position: relative;
   left: 0.1em;
@@ -105,4 +102,28 @@
 }
 .exito{
   margin-top: 4em;
+}
+.box{
+  text-align: justify;
+  position: relative;
+  left: 3em;
+  top: 3em;
+}
+.checkbox1{
+  text-align: justify;
+  position: relative;
+  left: 3em;
+}
+.checkbox1 label{
+  
+  position: relative;
+  right: 3em;
+}
+.boxAccount{
+  text-align: justify;
+  position: relative;
+  left: 3em;
+}
+button{
+  border: none;
 }

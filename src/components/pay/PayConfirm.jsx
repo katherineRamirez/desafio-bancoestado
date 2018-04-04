@@ -7,9 +7,6 @@ import Visibility from 'material-ui/svg-icons/action/visibility';
 import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
 import './pay.css'
 
-
-
-
 class PayConfirm extends Component {
   constructor() {
     super();//Estamos heredando de otra clase para que llame al contro
@@ -40,9 +37,9 @@ class PayConfirm extends Component {
               <div className='circuloGris'></div>
               <div className='circulo'></div>
               <div className='circuloGris'></div>
+      
+              <div className="since">
 
-
-      <div className="since">
        <p>Desde</p>       
        <p className="accountConfirm">Cta. Rut 15173095 <br/>Monto $20.000 </p>
        </div>

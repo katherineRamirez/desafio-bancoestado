@@ -46,7 +46,6 @@ class QrCode extends Component {
               <div className='circuloGris'></div>
               <div className='circulo'></div>
               <div className='circuloGris'></div>
-              
       
       <button className='btnSelectFriend' onClick={this.onButtonClick}>
           Leer código QR
