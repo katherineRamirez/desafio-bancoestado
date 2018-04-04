@@ -2,22 +2,36 @@
 	margin: 0;
 	padding: 0;
 }
-input{
-	display: block;
+
+
+.circulo {
+  border-radius: 6px;
+  background-color: #f97c00;
+  height: 1em;
+  width: 2em;
+  display: inline-block;
+  margin-left: 18px;
+  margin-top: 4%;
 }
 
-.inputPay{
-	padding-top: 4em;
-	padding-left: 2em;
+.circuloGris {
+  border-radius: 6px;
+  background-color: #5f5b5c;
+  height: 1em;
+  width: 2em;
+  display:inline-block;
+  margin-left: 12px;
+  margin-top: 4%;
 }
-.submit{
-	padding: 0.50em 4em;
-	margin-top: 4em;
-	margin-left: 2.5em;
-	color: white;
-	background-color: #FF8700;
+.btnSelectFriend {
+  background-color: #f97c00;
+  color: #fff;
+  margin-top: 7%;
+  margin-left: 8%;
+  height: 2.5em;
+  border-radius: 4px;
+  width: 16.5em;
 }
-.input{
-	width: 1.3em;
-	height: 1.3em;
+.box{
+	padding-top: 1.5em;
 }

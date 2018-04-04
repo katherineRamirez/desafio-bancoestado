@@ -34,14 +34,12 @@ class HomePage extends Component {
   }
 
   showCharge(event) {
-    console.log("holi")
     this.setState({
       counter: 3,
     })
   }
 
    showPay(event) {
-    console.log("chao")
     this.setState({
       counter: 4,
     })

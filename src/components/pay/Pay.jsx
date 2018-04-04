@@ -40,7 +40,7 @@ render() {
     <div>
       {this.state.counter === 1 ? (
       <div className="containerStart">
-        <p className="title">Pagar</p>
+        <h2 className="title">Pagar</h2>
         <div className="btns">
         <RaisedButton
           backgroundColor="#6320BF"

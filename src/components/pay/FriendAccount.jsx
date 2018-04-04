@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FriendAccount from './FriendAccount';
 import Checkbox from 'material-ui/Checkbox';
 import ActionFavorite from 'material-ui/svg-icons/action/favorite';
 import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
@@ -18,17 +17,17 @@ const styles = {
 
 
 
-class PayFriends extends Component {
+class FriendAccount extends Component {
   constructor() {
     super();//Estamos heredando de otra clase para que llame al contro
     this.state = {
       counter: 1,
       checked: false
     };
-    this.onButtonClick = this.onButtonClick.bind(this);
+    this.onBtnClick = this.onBtnClick.bind(this);
   }
 
-  onButtonClick(event) {
+  onBtnClick(event) {
     this.setState({
       counter: 2,
     })
@@ -39,34 +38,34 @@ class PayFriends extends Component {
     return (
       <div>
         {this.state.counter === 2 ? (
-          <FriendAccount />
+
         ) : (
             <div>
 
-              <h2 className='titleInvitar'>Confirma Amigo</h2>
-              <div className='circulo'></div>
+              <h2 className='titleInvitar'>Tipo de Cuenta</h2>
               <div className='circuloGris'></div>
+              <div className='circulo'></div>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
               <div className='check'>
               </div>
               <Checkbox className='box'
-				          label="Hugo Perez"
-				          style={styles.checkbox}
-				       />
-				       <Checkbox className='box'
-				          label="Paco Gonzalez"
-				          style={styles.checkbox}
-				       />
-				       <Checkbox className='box'
-				          label="Luis Tapia"
-				          style={styles.checkbox}
-				       />
+                  label="Cuenta Rut"
+                  style={styles.checkbox}
+               />
+               <Checkbox className='box'
+                  label="Cuenta Corriente"
+                  style={styles.checkbox}
+               />
+               <Checkbox className='box'
+                  label="Cuenta de Ahorro"
+                  style={styles.checkbox}
+               />
 
-              <button className='btnSelectFriend' onClick={this.onButtonClick}>
-			          Selecciona Amigo
-			      </button>
+              <button className='btnSelectFriend' onClick={this.onBtnClick}>
+                Selecciona tu cuenta
+            </button>
             </div>
           )}
 
@@ -77,4 +76,4 @@ class PayFriends extends Component {
 
 }
 
-export default PayFriends;
+export default FriendAccount;
