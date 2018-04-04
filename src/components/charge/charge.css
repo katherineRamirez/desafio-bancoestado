@@ -1,0 +1,57 @@
+.containerBtn{
+  display: inline-block;
+  background-color: #eeeeee;
+  margin: 1vh;
+  width: 16vh;
+  height: 16vh;
+}
+
+.btn{
+  border-radius: 1vh;
+  width: 12vh;
+  height: 12vh;
+  margin-top: 1vh;
+}
+
+.btn img{
+  width: 11.5vh;
+}
+
+.showEventsBtn{
+  background-color: blue;
+}
+
+.showFriendsBtn{
+  background-color: red;
+}
+
+.ball{
+  height: 2vh;
+  width: 4vh;
+  border-radius: 1vh;
+  background-color: #eee;
+  display: inline-block;
+  margin: 2vh;
+}
+
+.ballOne{
+  background-color: orange;
+}
+
+.eachEvent{
+  background-color: #eee;
+  padding: 4vh 4vh 6vh 4vh;
+  margin: 2vh;
+}
+.friendToPay{
+  float: left;
+}
+.total{
+  float: right;  
+}
+.goTo{
+  margin-left: 2vh;
+  color: #f97c00;
+  font-weight: bold;
+  float: right;  
+}

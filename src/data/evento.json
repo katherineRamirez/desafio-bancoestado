@@ -1,0 +1,40 @@
+{
+  "response": [
+    {
+      "nombre": "Asado",
+      "fecha": "02-01-2018",
+      "Lugar": "Casa de Rox",
+      "monto": 30000,
+      "amigos": [
+        {
+          "name": "Estefanía Osses",
+          "pay": 10000
+        }
+      ]
+    },
+    {
+      "nombre": "Carrete",
+      "fecha": "11-04-2018",
+      "Lugar": "Disco Chocolate",
+      "monto": 50000,
+      "amigos": [
+        {
+          "name": "Rox Cares",
+          "pay": 10000
+        }
+      ]
+    },
+    {
+      "nombre": "Cumpleaños",
+      "fecha": "14-02-2018",
+      "Lugar": "Restaurant Tiramisu",
+      "monto": 40000,
+      "amigos": [
+        {
+          "name": "Kathy",
+          "pay": 10000
+        }
+      ]
+    }
+  ]
+}

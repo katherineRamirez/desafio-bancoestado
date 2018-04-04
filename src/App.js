@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import Login from './components/login/Login.jsx';
+import HomePage from './components/start/Start.jsx';
 import Header from './components/Header';
-import Contacts from './components/Contacts/index.jsx';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import logo from './logo.svg';
 import './App.css';
 
 const muiTheme = getMuiTheme({
@@ -19,16 +19,10 @@ class App extends Component {
     return (
       <div className="App">
         <MuiThemeProvider muiTheme={muiTheme}>
-          <Header />
-          <Contacts/>
-          {/* <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React</h1>
-          </header>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p> */}
+          < Header />
+          < HomePage />
         </MuiThemeProvider>
+          < Login />
       </div>
     );
   }

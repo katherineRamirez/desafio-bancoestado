@@ -1,0 +1,51 @@
+.btnModo1 {
+  background-color: #f97c00;
+  color: #fff;
+  margin-top: 5%;
+  margin-left: 8%;
+  height: 2.5em;
+  border-radius: 4px;
+  width: 16.5em;
+}
+
+.titleModo1 {
+  padding-top: 4em;
+  margin-left: 8%;
+}
+
+
+.circulo {
+  border-radius: 6px;
+  background-color: #f97c00;
+  height: 1em;
+  width: 2em;
+  display: inline-block;
+  margin-left: 18px;
+  margin-top: 4%;
+}
+
+.circuloGris {
+  border-radius: 6px;
+  background-color: #5f5b5c;
+  height: 1em;
+  width: 2em;
+  display:inline-block;
+  margin-top: 4%;
+}
+
+.checkModo {
+  margin: 2em 3em 2em 0em;  
+}
+
+.modo1 {
+  padding-right: 7em;
+}
+
+.drop {
+  padding-right: 5em;
+}
+
+.boxModo {
+  padding-left: 34px;
+}
+
