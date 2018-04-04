@@ -55,7 +55,7 @@ handleSubmit(event) {
           // </div>
       );
       console.log(cont)
-      let search = cont.filter(number => number.length <= inputValue.length )
+      let search = cont.filter(number => number.length < inputValue.length )
       console.log(search)
       console.log(inputValue)
       this.setState({ contact: search });
