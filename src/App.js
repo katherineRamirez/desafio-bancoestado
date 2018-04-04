@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Login from './components/login/Login.jsx'
+import HomePage from './components/start/Start.jsx';
 import Header from './components/Header';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -20,6 +22,7 @@ class App extends Component {
         <MuiThemeProvider muiTheme={muiTheme}>
           < Header />   
           < Login />
+          <HomePage/>
         </MuiThemeProvider>
       </div>
     );
